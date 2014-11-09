@@ -3,11 +3,21 @@
 %
 
 # About
-my vim setup using vim-plug for linux/ubuntu machines
+my vim setup using vim-plug 
 
 # how to use
 
-## Using subdirectory
+## Windows
+
+clone this repo in $VIM directory
+
+````
+git init
+git remote add origin https://github.com/taekyunk/vim_setup_using_vimplg
+git pull origin master
+````
+
+## Linux
 
 1. clone this repo into ~/vimconfig
 2. add symbolic shortcuts
@@ -25,14 +35,5 @@ manually
 ln -s vimconfig/.vimrc .vimrc
 ln -s vimconfig/.vim .vim
 
-````
-
-## Using ~
-
-````
-cd ~
-git init
-git remote add origin https://github.com/foo/bar.git
-git pull origin master
 ````
 
