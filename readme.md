@@ -13,7 +13,7 @@ clone this repo in $VIM directory
 
 ````
 git init
-git remote add origin https://github.com/taekyunk/vim_setup_using_vimplug
+git remote add origin https://github.com/taekyunk/vim_setup
 git pull origin master
 ````
 
