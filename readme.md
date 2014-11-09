@@ -1,29 +1,29 @@
-% dotfiles
+% vim setup using vim-plug
 %
 %
 
 # About
-my dotfiles for linux/ubuntu machines
+my vim setup using vim-plug for linux/ubuntu machines
 
 # how to use
 
 ## Using subdirectory
 
-1. clone this repo into ~/dotfiles
+1. clone this repo into ~/vimconfig
 2. add symbolic shortcuts
 
 using script
 
 ````
 cd ~
-sh dotfiles/setup.sh
+sh vimconfig/setup.sh
 ````
 
 
 manually
 ````
-ln -s dotfiles/.vimrc .vimrc
-ln -s dotfiles/.vim .vim
+ln -s vimconfig/.vimrc .vimrc
+ln -s vimconfig/.vim .vim
 
 ````
 

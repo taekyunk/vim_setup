@@ -1,12 +1,12 @@
 " setup different location depending on window/unix
 let s:is_windows = has('win32') || has('win64')
 if s:is_windows
-    let s:vimplug_location = $VIM . '/vim_plugged'
+    let s:plugin_location = $VIM . '/vim_plugged'
 else
-    let s:vimplug_location = '~/.vim_plugged'
+    let s:plugin_location = '~/.vim_plugged'
 endif
-call plug#begin(s:vimplug_location)
-call plug#begin('~/.vim_plugged')
+
+call plug#begin(s:plugin_location)
 
 " colorscheme
 Plug 'godlygeek/csapprox'
