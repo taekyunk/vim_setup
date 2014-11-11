@@ -156,9 +156,9 @@ set incsearch
 
 " editor screen
 set number " show line number
-set ruler		" show the cursor position all the time
+set ruler " show the cursor position all the time
 set cursorline " highlight current line
-set showcmd		" display incomplete commands
+set showcmd " display incomplete commands
 
 " disable folding
 set nofoldenable
