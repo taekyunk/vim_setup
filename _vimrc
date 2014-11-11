@@ -35,6 +35,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'urso/haskell_syntax.vim'
 Plug 'vim-scripts/ShowMarks'
 Plug 'vim-scripts/matchit.zip'
+Plug 'haya14busa/incsearch.vim'
 
 " snipmate related install
 Plug 'MarcWeber/vim-addon-mw-utils'
@@ -357,6 +358,10 @@ let g:sneak#use_ic_scs = 1
 nmap s <Plug>(SneakStreak)
 nmap S <Plug>(SneakStreakBackward)
 
+" incsearch
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Selectively load spell checker for some file types
