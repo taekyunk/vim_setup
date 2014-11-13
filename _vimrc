@@ -273,6 +273,13 @@ nnoremap <silent> <leader><space> :nohlsearch<cr>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
+" Movement in insert mode
+inoremap <C-h> <C-o>h
+inoremap <C-l> <C-o>a
+inoremap <C-j> <C-o>j
+inoremap <C-k> <C-o>k
+inoremap <C-^> <C-o><C-^>
+
 " NERDTree toggle
 " http://stackoverflow.com/questions/2413005/switching-between-tabs-in-nerdtree?rq=1
 map <F2> :NERDTreeToggle<cr>
