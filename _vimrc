@@ -243,7 +243,7 @@ autocmd VimResized * wincmd =
 noremap <leader>q :q<cr>
 " save using <leader>s
 nnoremap <leader>s :w<cr>
-inoremap <leader>s <esc>:w<cr>
+" inoremap <leader>s <esc>:w<cr>
 " apply macro with Q. qq to create macro using register q, quit with q
 " apply with Q
 nnoremap Q @q
