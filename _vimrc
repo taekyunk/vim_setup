@@ -90,7 +90,7 @@ augroup END
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " http://superuser.com/questions/697847/cant-run-vimdiff-7-4-on-windows-7
 set diffexpr=MyDiff()
-function MyDiff()
+function! MyDiff()
     let opt = '-a --binary '
     if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
     if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
@@ -262,9 +262,6 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:>-,eol:?
 
-" fast edit vimrc
-nmap <leader>v :edit $MYVIMRC<CR>
-
 " Clear search terms
 nnoremap <silent> <leader><space> :nohlsearch<cr>
 
@@ -282,6 +279,13 @@ inoremap <C-^> <C-o><C-^>
 " NERDTree toggle
 " http://stackoverflow.com/questions/2413005/switching-between-tabs-in-nerdtree?rq=1
 map <F2> :NERDTreeToggle<cr>
+
+" fast edit vimrc
+nmap <F3> :edit $MYVIMRC<CR>
+nmap <leader>v :edit $MYVIMRC<CR>
+
+" Reload .vimrc
+nmap <F4> :source $MYVIMRC<CR>:redraw!<CR>:AirlineRefresh<CR>:nohlsearch<cr>:echo "vimrc reloaded!"<CR>
 
 " force refresh or redraw screen
 nnoremap <F5> :redraw!<cr>
@@ -372,7 +376,6 @@ map g/ <Plug>(incsearch-stay)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Selectively load spell checker for some file types
-" http://jhshi.wordpress.com/2012/11/05/enabledisable-spell-checking-according-to-file-type-in-vim/
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " global setting
@@ -380,9 +383,8 @@ set nospell
 
 augroup spellCheck
     autocmd!
-    autocmd BufNewFile,BufRead,BufEnter *.tex setlocal spell spelllang=en_us
-    autocmd BufNewFile,BufRead,BufEnter *.txt setlocal spell spelllang=en_us
-    " autocmd BufNewFile,BufRead,BufEnter *.md setlocal spell spelllang=en_us
+    autocmd InsertEnter *.txt,*.tex,*.md setlocal spell spelllang=en_us
+    autocmd InsertLeave *.txt,*.tex,*.md setlocal nospell spelllang=en_us
 augroup END
 
 
