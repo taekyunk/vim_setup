@@ -36,6 +36,8 @@ Plug 'tpope/vim-speeddating'
 Plug 'urso/haskell_syntax.vim'
 Plug 'vim-scripts/matchit.zip'
 Plug 'haya14busa/incsearch.vim'
+Plug 'wellle/targets.vim'
+Plug 'michaeljsmith/vim-indent-object'
 
 " snipmate related install
 Plug 'MarcWeber/vim-addon-mw-utils'
