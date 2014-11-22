@@ -230,6 +230,16 @@ nnoremap <S-space> <C-b>
 vnoremap < <gv
 vnoremap > >gv
 
+" allow moving into blank space in visual block mode
+set virtualedit=block
+
+" consistent with C and D
+nnoremap Y y$
+
+" make split more intuitively
+set splitbelow
+set splitright
+
 " move between split
 " http://benmccormick.org/2014/07/07/learning-vim-in-2014-working-with-files/
 nnoremap <C-J> <C-W>j
