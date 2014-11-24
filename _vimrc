@@ -210,6 +210,10 @@ vnoremap ; :
 nnoremap / /\v
 vnoremap / /\v
 
+" similar to emacs Occur
+" http://travisjeffery.com/b/2011/10/m-x-occur-for-vim/
+nmap g/ :vimgrep /<C-R>//j %<CR>\|:cw<CR>
+
 " Move by screen line without count, but move by actual line with count
 nnoremap <expr> k v:count == 0 ? 'gk' : 'k'
 nnoremap <expr> j v:count == 0 ? 'gj' : 'j'
@@ -385,7 +389,6 @@ nmap S <Plug>(SneakStreakBackward)
 " incsearch
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Selectively load spell checker for some file types
