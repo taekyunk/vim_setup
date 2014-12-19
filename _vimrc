@@ -24,7 +24,7 @@ Plug 'godlygeek/tabular'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-sneak'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kristijanhusak/vim-multiple-cursors'
 Plug 'tomtom/tcomment_vim'
