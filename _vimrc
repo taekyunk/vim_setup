@@ -280,6 +280,7 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:>-,eol:¬
 " Clear search terms
 nnoremap <silent> <leader><space> :nohlsearch<cr>
+nnoremap <silent> <leader>/ :nohlsearch<cr>
 
 " Move visual block
 vnoremap J :m '>+1<CR>gv=gv
