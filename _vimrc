@@ -38,6 +38,7 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'haya14busa/incsearch.vim'
 Plug 'wellle/targets.vim'
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'tommcdo/vim-exchange'
 
 " snipmate related install
 Plug 'MarcWeber/vim-addon-mw-utils'
