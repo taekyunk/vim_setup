@@ -22,18 +22,18 @@ git pull origin master
 1. clone this repo into ~/vimconfig
 2. add symbolic shortcuts
 
-using script
+2a. using script
 
 ````
 cd ~
 sh vimconfig/setup.sh
 ````
 
+2b. manually
 
-manually
 ````
 ln -s vimconfig/.vimrc .vimrc
 ln -s vimconfig/.vim .vim
-
+ln -s vimconfig/.gvimrc .gvimrc
 ````
 
