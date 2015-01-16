@@ -313,7 +313,7 @@ vnoremap <F8> "+y
 nnoremap <F8> gg"+yG<C-o><C-o>
 inoremap <F8> <esc>gg"+yG<C-o><C-o>
 nnoremap <F9> "+p
-inoremap <F9> <esc>"+p
+inoremap <F9> <esc>"+pA
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " functions
