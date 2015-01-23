@@ -46,7 +46,7 @@ Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 
-" personal plugin 
+" personal plugin
 Plug 'taekyunk/vim-tk-snippets'
 Plug 'taekyunk/vim-tk-filetype-setting'
 
