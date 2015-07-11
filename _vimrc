@@ -75,6 +75,7 @@ set history=200		" keep n lines of command line history
 " disable bell/visual bell
 " http://vim.wikia.com/wiki/Disable_beeping
 set noerrorbells visualbell t_vb=
+set relativenumber
 
 augroup vimrcEx
     autocmd!
