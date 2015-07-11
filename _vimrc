@@ -76,7 +76,6 @@ set history=200		" keep n lines of command line history
 " disable bell/visual bell
 " http://vim.wikia.com/wiki/Disable_beeping
 set noerrorbells visualbell t_vb=
-set relativenumber
 
 augroup vimrcEx
     autocmd!
@@ -161,6 +160,7 @@ set incsearch
 
 " editor screen
 set number " show line number
+set relativenumber " relative line number
 set ruler " show the cursor position all the time
 set cursorline " highlight current line
 set showcmd " display incomplete commands
