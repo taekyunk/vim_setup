@@ -7,4 +7,6 @@ vim_plugged/*
 # vim tags file
 tags
 tags-ja
+# others
+*.pdf
 

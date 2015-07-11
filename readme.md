@@ -8,10 +8,10 @@
 1. install Vim/Gvim
 2. setup depending on the operating system: see the next sections.
 3. start Vim and do the following
-````
-:PlugUpgrade
-:PlugInstall
-````
+    ````
+    :PlugUpgrade
+    :PlugInstall
+    ````
 4. restart Vim
 
 # Setup for Windows
