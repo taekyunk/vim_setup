@@ -394,6 +394,9 @@ nmap S <Plug>(SneakStreakBackward)
 " incsearch
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
+let g:incsearch#auto_nohlsearch = 1
+let g:incsearch#magic = '\v' " very magic
+let g:incsearch#separate_highlight = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Selectively load spell checker for some file types
