@@ -20,6 +20,7 @@ Plug 'Townk/vim-autoclose'
 Plug 'bling/vim-airline'
 Plug 'captbaritone/better-indent-support-for-php-with-html'
 Plug 'ervandew/supertab'
+" Need tabular to align pipe table automatically later
 Plug 'godlygeek/tabular'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'junegunn/vim-easy-align'
@@ -310,7 +311,9 @@ nmap <F4> :source $MYVIMRC<CR>:redraw!<CR>:AirlineRefresh<CR>:nohlsearch<cr>:ech
 nnoremap <F5> :redraw!<cr>
 
 " copy & paste from system clipboard: F8 to copy/yank, F9 to paste
+" in visual mode, yank only the visually selected text
 vnoremap <F8> "+y
+" in normal and insert mode, select all the text
 nnoremap <F8> gg"+yG<C-o><C-o>
 inoremap <F8> <esc>gg"+yG<C-o><C-o>
 nnoremap <F9> "+p
