@@ -319,6 +319,12 @@ inoremap <F8> <esc>gg"+yG<C-o><C-o>
 nnoremap <F9> "+p
 inoremap <F9> <esc>"+pA
 
+" use visual mode to select and then yank
+xnoremap <leader>y "+y
+" normal mode: copy and paste using clipboard
+nnoremap <leader>y "+y
+nnoremap <leader>p "+p
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " functions
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
