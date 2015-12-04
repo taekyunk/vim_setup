@@ -312,7 +312,7 @@ nnoremap <F5> :redraw!<cr>
 
 " copy & paste from system clipboard: F8 to copy/yank, F9 to paste
 " in visual mode, yank only the visually selected text
-vnoremap <F8> "+y
+xnoremap <F8> "+y
 " in normal and insert mode, select all the text
 nnoremap <F8> gg"+yG<C-o><C-o>
 inoremap <F8> <esc>gg"+yG<C-o><C-o>
