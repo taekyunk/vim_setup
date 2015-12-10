@@ -310,15 +310,6 @@ nmap <F4> :source $MYVIMRC<CR>:redraw!<CR>:AirlineRefresh<CR>:nohlsearch<cr>:ech
 " force refresh or redraw screen
 nnoremap <F5> :redraw!<cr>
 
-" copy & paste from system clipboard: F8 to copy/yank, F9 to paste
-" in visual mode, yank only the visually selected text
-xnoremap <F8> "+y
-" in normal and insert mode, select all the text
-nnoremap <F8> gg"+yG<C-o><C-o>
-inoremap <F8> <esc>gg"+yG<C-o><C-o>
-nnoremap <F9> "+p
-inoremap <F9> <esc>"+pA
-
 " use visual mode to select and then yank
 xnoremap <leader>y "+y
 " normal mode: copy and paste using clipboard
