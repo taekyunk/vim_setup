@@ -262,7 +262,6 @@ autocmd VimResized * wincmd =
 noremap <leader>q :q<cr>
 " save using <leader>s
 nnoremap <leader>s :w<cr>
-" inoremap <leader>s <esc>:w<cr>
 " apply macro with Q. qq to create macro using register q, quit with q
 " apply with Q
 nnoremap Q @q
@@ -270,7 +269,6 @@ vnoremap Q :norm @q<cr>
 
 " close buffer
 nnoremap <leader>w :bdelete<cr>
-" inoremap <leader>w <esc>:bdelete<cr>
 
 " Clear all trailing white spaces
 " From http://stevelosh.com/blog/2010/09/coming-home-to-vim/
