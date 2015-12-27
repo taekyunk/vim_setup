@@ -301,7 +301,6 @@ inoremap <C-^> <C-o><C-^>
 map <F2> :NERDTreeToggle<cr>
 
 " fast edit vimrc
-nmap <F3> :edit $MYVIMRC<CR>
 nmap <leader>v :edit $MYVIMRC<CR>
 
 " Reload .vimrc
