@@ -281,6 +281,7 @@ nnoremap <leader>W :%s/\v\s+$//<cr>:let @/ = ""<cr>
 nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:>-,eol:¬
+
 " Clear search terms
 nnoremap <silent> <leader><space> :nohlsearch<cr>
 nnoremap <silent> <leader>/ :nohlsearch<cr>
