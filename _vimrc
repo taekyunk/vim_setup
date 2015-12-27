@@ -270,7 +270,7 @@ vnoremap Q :norm @q<cr>
 
 " close buffer
 nnoremap <leader>w :bdelete<cr>
-inoremap <leader>w <esc>:bdelete<cr>
+" inoremap <leader>w <esc>:bdelete<cr>
 
 " Clear all trailing white spaces
 " From http://stevelosh.com/blog/2010/09/coming-home-to-vim/
