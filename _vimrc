@@ -26,7 +26,6 @@ Plug 'jlanzarotta/bufexplorer'
 Plug 'junegunn/vim-easy-align'
 Plug 'justinmk/vim-sneak'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
@@ -295,9 +294,12 @@ inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
 inoremap <C-^> <C-o><C-^>
 
-" NERDTree toggle
-" http://stackoverflow.com/questions/2413005/switching-between-tabs-in-nerdtree?rq=1
-map <F2> :NERDTreeToggle<cr>
+" netrw
+" http://vimcasts.org/episodes/the-file-explorer/
+" https://blog.mozhu.info/vimmers-you-dont-need-nerdtree-18f627b561c3#.2zxqntfox
+noremap <F2> :Explore<cr>
+" http://usevim.com/2015/06/05/netrw-style/
+let g:netrw_liststyle=1
 
 " fast edit vimrc
 nmap <leader>v :edit $MYVIMRC<CR>
