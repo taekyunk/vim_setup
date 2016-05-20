@@ -242,6 +242,10 @@ set virtualedit=block
 " consistent with C and D
 nnoremap Y y$
 
+" split using | and _
+nnoremap <expr><silent> \| !v:count ? "<C-W>v<C-W><Right>" : '\|'
+nnoremap <expr><silent> _  !v:count ? "<C-W>s<C-W><Down>"  : '_'
+
 " make split more intuitively
 set splitbelow
 set splitright
