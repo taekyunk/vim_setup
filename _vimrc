@@ -18,7 +18,6 @@ Plug 'jnurmine/Zenburn'
 " plugins
 Plug 'Townk/vim-autoclose'
 Plug 'bling/vim-airline'
-Plug 'captbaritone/better-indent-support-for-php-with-html'
 Plug 'ervandew/supertab'
 " Need tabular to align pipe table automatically later
 Plug 'godlygeek/tabular'
@@ -33,12 +32,16 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-speeddating'
-Plug 'urso/haskell_syntax.vim'
 Plug 'vim-scripts/matchit.zip'
 Plug 'haya14busa/incsearch.vim'
 Plug 'wellle/targets.vim'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tommcdo/vim-exchange'
+
+" language
+Plug 'rust-lang/rust.vim'
+Plug 'urso/haskell_syntax.vim'
+Plug 'captbaritone/better-indent-support-for-php-with-html'
 
 " snipmate related install
 Plug 'MarcWeber/vim-addon-mw-utils'
@@ -256,6 +259,10 @@ nnoremap <C-J> <C-W>j
 nnoremap <C-K> <C-W>k
 nnoremap <C-L> <C-W>l
 nnoremap <C-H> <C-W>h
+
+" Use tab and shift-tab to cycle through windows.
+nnoremap <Tab> <C-W>w
+nnoremap <S-Tab> <C-W>W
 
 " equal splits when resized
 autocmd VimResized * wincmd =
