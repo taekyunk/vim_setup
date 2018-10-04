@@ -170,6 +170,9 @@ set showcmd " display incomplete commands
 " disable folding
 set nofoldenable
 
+" encoding
+set encoding=utf-8
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " gui
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
