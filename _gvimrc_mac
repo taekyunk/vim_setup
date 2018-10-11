@@ -1,0 +1,9 @@
+" font
+set guifont=Menlo\ Regular:h16
+
+" Size of GVim window
+set lines=60 columns=120
+
+" disable visual bell in Gvim
+set vb t_vb=
+

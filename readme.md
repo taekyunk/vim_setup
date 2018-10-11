@@ -32,18 +32,23 @@ Note: to find `$VIM` directory, type `:echo $VIM` within Vim.
 1. clone this repo into ~/vimconfig
 2. add symbolic shortcuts
 
-2a. using script
+````
+cd ~
+ln -s vimconfig/vimfiles .vim
+ln -s vimconfig/_vimrc .vimrc
+ln -s vimconfig/.gvimrc_ubuntu .gvimrc
+````
+
+# Setup for Mac
+
+
+1. clone this repo into ~/vimconfig
+2. add symbolic shortcuts
 
 ````
 cd ~
-sh vimconfig/setup.sh
-````
-
-2b. manually
-
-````
-ln -s vimconfig/.vimrc .vimrc
-ln -s vimconfig/.vim .vim
-ln -s vimconfig/.gvimrc .gvimrc
+ln -s vimconfig/vimfiles .vim
+ln -s vimconfig/_vimrc .vimrc
+ln -s vimconfig/_gvimrc_mac .gvimrc
 ````
 
