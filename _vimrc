@@ -39,6 +39,7 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'tommcdo/vim-exchange'
 
 " language
+Plug 'vim-syntastic/syntastic'
 Plug 'rust-lang/rust.vim'
 Plug 'urso/haskell_syntax.vim'
 Plug 'captbaritone/better-indent-support-for-php-with-html'
@@ -408,6 +409,16 @@ map ?  <Plug>(incsearch-backward)
 let g:incsearch#auto_nohlsearch = 1
 let g:incsearch#magic = '\v' " very magic
 let g:incsearch#separate_highlight = 1
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Selectively load spell checker for some file types
