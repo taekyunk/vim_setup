@@ -1,7 +1,7 @@
 *.swp
 *~
 # Vim main executible files 
-vim74/*
+vim81/*
 # plugins managed by vim-plug
 vim_plugged/*
 # vim tags file
