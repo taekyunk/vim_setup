@@ -18,14 +18,13 @@
 
 1. clone this repo in `$VIM` directory
 
+Note: to find `$VIM` directory, type `:echo $VIM` within Vim.
+
 ````
 git init
 git remote add origin https://github.com/taekyunk/vim_setup
 git pull origin master
 ````
-
-Note: to find `$VIM` directory, type `:echo $VIM` within Vim.
-
 
 # Setup for Linux
 
