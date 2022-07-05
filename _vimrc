@@ -265,8 +265,9 @@ nnoremap <C-L> <C-W>l
 nnoremap <C-H> <C-W>h
 
 " Use tab and shift-tab to cycle through windows.
-nnoremap <Tab> <C-W>w
-nnoremap <S-Tab> <C-W>W
+" https://stackoverflow.com/a/5563142/4475353
+nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
+nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 
 " equal splits when resized
 autocmd VimResized * wincmd =
