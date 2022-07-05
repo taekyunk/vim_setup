@@ -326,11 +326,8 @@ nmap <F4> :source $MYVIMRC<CR>:redraw!<CR>:AirlineRefresh<CR>:nohlsearch<cr>:ech
 " force refresh or redraw screen
 nnoremap <F5> :redraw!<cr>
 
-" use visual mode to select and then yank
-xnoremap <leader>y "+y
-" normal mode: copy and paste using clipboard
-nnoremap <leader>y "+y
-nnoremap <leader>p "+p
+" use system clipboard
+set clipboard^=unnamed,unnamedplus
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " functions
