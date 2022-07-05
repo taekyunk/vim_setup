@@ -418,6 +418,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" From https://stackoverflow.com/a/21434697/4475353
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <C-w>E :SyntasticCheck<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Selectively load spell checker for some file types
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -430,5 +434,7 @@ augroup spellCheck
     autocmd InsertEnter *.txt,*.tex,*.md setlocal spell spelllang=en_us
     autocmd InsertLeave *.txt,*.tex,*.md setlocal nospell spelllang=en_us
 augroup END
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
