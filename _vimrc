@@ -37,6 +37,7 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'wellle/targets.vim'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tommcdo/vim-exchange'
+Plug 'osyo-manga/vim-over'
 
 " language
 Plug 'vim-syntastic/syntastic'
@@ -45,10 +46,10 @@ Plug 'urso/haskell_syntax.vim'
 Plug 'captbaritone/better-indent-support-for-php-with-html'
 
 " snipmate related install
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
-Plug 'honza/vim-snippets'
+" Plug 'MarcWeber/vim-addon-mw-utils'
+" Plug 'tomtom/tlib_vim'
+" Plug 'garbas/vim-snipmate'
+" Plug 'honza/vim-snippets'
 
 " personal plugin
 Plug 'taekyunk/vim-tk-snippets'
@@ -207,8 +208,6 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " key shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap ; :
-vnoremap ; :
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcuts
