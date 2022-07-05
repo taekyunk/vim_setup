@@ -1,8 +1,9 @@
 " font
-set gfn=Consolas:h12:cANSI
+" set gfn=Consolas:h12:cANSI
+set gfn=D2Coding:h12
 
 " Size of GVim window
-set lines=50 columns=100
+set lines=50 columns=120
 
 " disable visual bell in Gvim
 set vb t_vb=
