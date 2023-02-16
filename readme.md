@@ -19,6 +19,7 @@
 1. clone this repo in `$VIM` directory
 
 Note: to find `$VIM` directory, type `:echo $VIM` within Vim.
+- rename `_vimrc` to another to avoid error when doing git pull
 
 ````
 git init
