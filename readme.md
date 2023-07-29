@@ -1,8 +1,8 @@
-% vim setup using vim-plug
-%
-%
+# About
+- vim setup using vim-plug
 
-# how to use
+
+# Procedure
 
 0. need Git installed
 1. install Vim/Gvim
@@ -16,16 +16,22 @@
 
 # Setup for Windows
 
-1. clone this repo in `$VIM` directory
-
-Note: to find `$VIM` directory, type `:echo $VIM` within Vim.
-- rename `_vimrc` to another to avoid error when doing git pull
-
+1. rename `_vimrc` to another to avoid error when doing git pull
+2. Find `$VIM` directory using Vim commandline
+```vim
+:echo $VIM
+`````
+3. clone repo
 ````
 git init
 git remote add origin https://github.com/taekyunk/vim_setup
 git pull origin master
 ````
+
+##  Note
+- Make sure that `git.exe` is available in PATH before using 'Vimplug'
+    - Can find one from 'Git for Windows' 
+
 
 # Setup for Linux
 
