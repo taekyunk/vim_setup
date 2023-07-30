@@ -24,7 +24,7 @@
 3. clone repo
 ````
 git init
-git remote add origin https://github.com/taekyunk/vim_setup
+git remote add origin git@github.com:taekyunk/vim_setup.git
 git pull origin master
 ````
 
